@@ -57,7 +57,7 @@ class StoreDetailActivity : AppCompatActivity() {
             if (storeName.isNotEmpty()) {
                 val sendIntent: Intent = Intent().apply {
                     action = Intent.ACTION_SEND
-                    putExtra(Intent.EXTRA_TEXT, "¡Mira esta tienda genial: $storeName!")
+                    putExtra(Intent.EXTRA_TEXT, "¡Mira esta tienda es genial: $storeName!")
                     type = "text/plain"
                 }
                 val shareIntent = Intent.createChooser(sendIntent, null)
