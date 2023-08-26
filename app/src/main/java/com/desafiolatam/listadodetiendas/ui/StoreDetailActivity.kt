@@ -52,7 +52,7 @@ class StoreDetailActivity : AppCompatActivity() {
 
         val buttonShare = findViewById<Button>(R.id.compatirButton)
         buttonShare.setOnClickListener {
-            val storeName = store?.name ?: "" // Obtén el nombre de la tienda del objeto Store
+            val storeName = store?.name ?: ""
 
             if (storeName.isNotEmpty()) {
                 val sendIntent: Intent = Intent().apply {
